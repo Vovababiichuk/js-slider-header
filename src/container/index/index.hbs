@@ -3,9 +3,39 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<main>
-	{{>heading title="Index" info=data.test}}
-</main>
+<div class="page">
+    <header class="header">
+        <div class="header__top">
+            <div class="header__list">
+                <a href="#" class="header__link">Home</a>
+                <a href="#" class="header__link">About</a>
+                <a href="#" class="header__link">Contact</a>
+            </div>
+            <button class="header__button header__button--open"></button>
+        </div>
+        <div class="header__wrapper">
+            <div class="header__bottom">
+                <div class="header__list header__list--top">
+                    <a href="#" class="header__link">Service</a>
+                    <a href="#" class="header__link">Privacy</a>
+                    <a href="#" class="header__link">Clients</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="slider">
+        <div class="slider__content">
+            <img class="slider__item" src="https://picsum.photos/600/400" width="100%" height="400">
+            <img class="slider__item" src="https://picsum.photos/600/400" width="100%" height="400">
+            <img class="slider__item" src="https://picsum.photos/600/400" width="100%" height="400">
+            <img class="slider__item" src="https://picsum.photos/600/400" width="100%" height="400">
+        </div>
+
+        <button class="slider__button slider__button--left"></button>
+        <button class="slider__button slider__button--right"></button>
+    </main>
+</div>
 
 {{!
     Цей код містить лише те, що буде виводитись в <body>
